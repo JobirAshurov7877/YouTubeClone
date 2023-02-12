@@ -46,11 +46,16 @@ a{
 	height: 77vh !important;
 	width: 100% !important;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 	.search-bar {
-		width: 100px;
+		width: 120px;
+    height: 15px;
+    
 	}
 	.react-player {
 		height: 45vh !important;
 	}
+  .logo{
+    height: 30px;
+  }
 }

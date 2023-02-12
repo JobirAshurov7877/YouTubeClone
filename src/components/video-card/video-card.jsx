@@ -8,9 +8,10 @@ import { Link } from "react-router-dom"
 const VideoCard = ({video}) => {
      
   return (
-     <Card sx={{width:{sx:'100%',sm:'360px',md:'320px '}}}>
+     <Card sx={{width:{sx:'100%',sm:'360px',md:'320px '},borderRadius:'12px',
+         boxShadow:'-webkit-box-shadow: -1px 5px 26px 6px rgba(127, 127, 127, 0.2); -moz-box-shadow: -1px 5px 26px 6px rgba(127, 127, 127, 0.2); box-shadow: -1px 5px 26px 6px rgba(127, 127, 127, 0.2);'}}>
          <Link to={`/video/${video.id.videoId}`}>
-         <CardMedia component= {'img'} image={video.snippet.thumbnails.high.url}  />
+         <CardMedia sx={{borderRadius:'12px'}} component= {'img'} image={video.snippet.thumbnails.high.url}  />
          </Link>
          
 

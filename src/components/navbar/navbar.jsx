@@ -5,6 +5,7 @@ import { SearchBar } from "../"
 
 
 
+
 const Navbar = () => {
   return (
     <Stack direction={'row'} 
@@ -14,7 +15,7 @@ const Navbar = () => {
     bgcolor={'#fff'}
     sx={{position:'sticky',top: 0, zIndex:999}}>
     <Link to={'/'}>
-      <img src={logo} alt="logo" height={40} />
+      <img src={logo} alt="logo" className="logo" height={40} />
     </Link>
     <SearchBar />
     

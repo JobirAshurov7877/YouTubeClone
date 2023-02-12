@@ -20,7 +20,10 @@ const SearchBar = () => {
     <Paper 
     component={"form"} 
     onSubmit={submitHandler}
-    sx={{pl:2, border:`1px  solid ${colors.primary}`, boxShadow:'none' , borderRadius:20 , color:`${colors.textColor}`}}>
+    sx={{ height:{xs:'40px',sm:'45px',md:'45px '} , pl:2, border:`1px  solid ${colors.primary}`, boxShadow:'none' , borderRadius:20 , 
+    color:`${colors.textColor}`
+    
+    }}>
 
 
     <input className="search-bar" type="text" placeholder="Search..." onChange={e => setValue(e.target.value)}/>
